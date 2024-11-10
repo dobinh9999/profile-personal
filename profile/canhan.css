@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-y: scroll; /* Đảm bảo thanh cuộn nằm ngoài phần nền */
+}
+
+.background {
+    background-image: url('/img/ảnh.jpg'); /* Đặt đường dẫn đến ảnh nền của bạn */
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, filter 0.5s ease; /* Thêm hiệu ứng chuyển đổi */
+    border: 2px solid transparent; /* Viền mặc định không có màu */
+    
+}
+.background :hover{
+    transform: scale(1.02); /* Phóng to nhẹ */
+}
+
+.container {
+    background-color: rgba(212, 249, 255, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(12, 6, 6, 0.2);
+    max-width: 800px;
+    width: 60%;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Màu nền với độ mờ */
+    border: 4px solid #9cdff3; /* Viền trắng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Tạo bóng cho avatar */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+.profile-image:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+}
+
+.sothich-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8593b8;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: none;
+}
+
+.sothich-button img {
+    width: 20px;  /* Điều chỉnh chiều rộng icon */
+    height: 20px; /* Điều chỉnh chiều cao icon */
+    margin-right: 10px; /* Khoảng cách giữa icon và chữ */
+}
+
+.sothich-button:hover {
+    background-color: #52c1f5;
+}
+
+.readme-button {
+    background-color: #3d7ebb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.location {
+    margin: 10px 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #444;
+    margin: 0;
+    border-radius: 5px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent; /* Viền mặc định không có màu */
+    transition: border-color 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
+}
+
+/* Hiệu ứng hover thay đổi màu viền và phóng to nhẹ */
+section:hover {
+    border-color: #3498db; /* Đổi màu viền sang màu xanh khi hover */
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 20px); /* Căn kích thước mỗi phần tử chiếm 1/3 chiều rộng, trừ đi khoảng cách */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent; /* Viền mặc định không có màu */
+    transition: border-color 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
+}
+
+/* Hiệu ứng hover thay đổi màu viền và thêm chút phóng to */
+.project:hover {
+    border-color: #3498db; /* Đổi màu viền sang màu xanh khi hover */
+    transform: scale(1.1); /* Phóng to nhẹ */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
